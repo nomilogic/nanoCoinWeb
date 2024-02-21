@@ -1,0 +1,128 @@
+.faq-section {
+  .accordion-item {
+    border: none;
+    .accordion-header {
+      button {
+        border-top-left-radius: 0.625rem;
+        border-top-right-radius: 0.625rem;
+        font-family: Circular Std;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #000000;
+        flex-wrap: nowrap;
+        &.py-6 {
+          padding-bottom: 5rem;
+          padding-top: 5rem;
+        }
+      }
+    }
+    .accordion-body {
+      flex-wrap: nowrap;
+      font-family: Circular Std;
+      font-style: normal;
+      font-weight: 450;
+      font-size: 1.125rem;
+      color: #3d3d3d;
+      background: rgb(255, 90, 96, 0.15);
+      border-bottom-right-radius: 3.125rem;
+      border-bottom-left-radius: 0.625rem;
+    }
+    .accordion-button:not(.collapsed) {
+      background: rgb(255, 90, 96, 0.15);
+      color: #000000;
+      box-shadow: none;
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+      border-color: rgba(0, 0, 0, 0.125);
+    }
+    .accordion-button {
+      height: 3rem;
+    }
+    .accordion-button::after {
+      background-size: contain;
+      background-image: url("/assets/images/accordion-arrow-right.svg");
+    }
+    button:focus:not(:focus-visible) {
+      border-color: transparent;
+    }
+  }
+}
+
+.new-letter-section {
+  .box {
+    background: #f5cfc8;
+    backdrop-filter: blur(22rem);
+    border-radius: 1.25rem 1.25rem 8.125rem 1.25rem;
+    .left-section {
+      .title {
+        height: 4rem;
+        display: inline-block;
+        font-family: Circular Std;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2.25rem;
+        line-height: 2rem;
+        color: #000000;
+        background-image: url("/assets/images/green-underline.svg");
+        background-repeat: no-repeat;
+        background-position-y: 2.125rem;
+        background-position-x: 0.8rem;
+      }
+      .subtitle {
+        font-family: Circular Std;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: #3d3d3d;
+      }
+      .input-custom {
+        background: #e5e5e5;
+        border-radius: 0.625rem;
+      }
+      .btn-custom {
+        width: 100%;
+        font-family: Circular Std;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.125rem;
+        color: #ffffff;
+        background: #27ae60;
+        border-radius: 10px 10px 50px 10px;
+      }
+    }
+    .right-section {
+      .box {
+        background: #f0e0df;
+        backdrop-filter: blur(20rem);
+        border-radius: 1.25rem 1.25rem 7.25rem 1.25rem;
+        .title {
+          display: block;
+          font-family: Circular Std;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 2.25rem;
+          color: #ff5a60;
+        }
+        .subtitle {
+          font-family: Circular Std;
+          font-style: normal;
+          font-weight: 450;
+          font-size: 1.5rem;
+          line-height: 1rem;
+          color: #3d3d3d;
+          a {
+            text-decoration: none;
+            color: #ff5a60;
+          }
+        }
+      }
+    }
+  }
+}

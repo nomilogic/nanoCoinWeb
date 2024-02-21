@@ -1,0 +1,154 @@
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="heading">
+          <span class="title"
+            >How <span class="text-red">Deed</span> works</span
+          >
+          <span class="subtitle"
+            >Here's the gist of it. For more,
+            <a href="" class="link-red">dive into the details</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-5">
+      <ng-container *ngFor="let item of deedItemList">
+        <div class="col-12 col-lg-4">
+          <app-deed-item
+            [imagePath]="item.imagePath"
+            [title]="item.title"
+            [subtitle]="item.subtitle"
+            [buttonText]="item.buttonText"
+          ></app-deed-item>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="smoke-background blur">
+    <div class="container">
+      <div class="video-section">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-4 text-center text-lg-start mb-5 mb-lg-0">
+            <span class="title mb-4">
+              Farmers Like Ben Are Directly Rewarded by Your Support
+            </span>
+            <span class="subtitle mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh eget
+              tortor fusce dolor vitae tellus imperdiet. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Nibh eget tortor fusce dolor
+              vitae tellus imperdiet.
+            </span>
+            <button class="btn btn-danger btn-custom px-4 mx-auto mx-lg-0">
+              View Ben’s profile
+            </button>
+          </div>
+          <div
+            class="col-12 offset-lg-1 col-lg-4 video d-flex justify-content-center"
+          >
+            <iframe
+              style="width: 30rem; height: 18rem"
+              src="https://www.youtube.com/embed/IUN664s7N-c"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="carbon-section">
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="heading">
+              <span class="title">
+                Know Your
+                <span class="text-red"> Carbon </span>
+                Footprint
+              </span>
+              <span class="subtitle">
+                Calculate your carbon footprint to start removing it.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between mb-5">
+          <ng-container *ngFor="let item of carbonItemList">
+            <div class="col-6 mb-3 col-md-4 col-lg-2 mb-lg-0">
+              <app-carbon-item
+                [imagePath]="item.imagePath"
+                [title]="item.title"
+                [subtitle]="item.subtitle"
+              ></app-carbon-item>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mb-5">
+    <div class="col-7 text-center">
+      <span class="estimate-text"
+        >These estimates are from third-party sources. We recommend doing your
+        own calculations to determine exactly how much CO2 you and/or your
+        business are responsible for emitting.
+      </span>
+    </div>
+  </div>
+
+  <div class="road-map">
+    <div class="heading">
+      <span class="title">
+        <span class="text-red"> Roadmap </span>
+        to Launch
+      </span>
+    </div>
+
+    <img class="image" src="../../../assets/images/road-map.png" alt="" />
+  </div>
+
+  <div class="join-use-section">
+    <div class="row mb-5">
+      <div class="col-12 mb-5 mb-md-0">
+        <div class="heading">
+          <span class="title" style="height: 5.75rem">
+            Join Leaders in
+            <span class="text-red"> Reversing </span>
+            Climate Change
+          </span>
+        </div>
+      </div>
+    </div>
+    <app-carousel></app-carousel>
+  </div>
+</div>
+
+<div class="last-section pt-5 pb-2">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-xl-6 mb-5 mb-xl-0">
+        <span class="title"
+          >Enroll your farm in the Deed US Croplands Pilot</span
+        >
+        <span class="subtitle">
+          If you farm in the United States and have adopted regenerative
+          practices after 2010, Fill out the form below!
+        </span>
+      </div>
+      <div class="col-12 col-xl-6 text-center text-xl-end">
+        <button
+          type="button"
+          class="btn btn-light btn-custom px-4 me-5 align-self-end"
+        >
+          Enroll in the Deed US Croplands Pilot
+        </button>
+        <img
+          class="mx-auto mx-xl-0 ms-xl-5"
+          src="../../../assets/images/notes.png"
+          alt=""
+          style="width: 9rem; height: 9rem"
+        />
+      </div>
+    </div>
+  </div>
+</div>

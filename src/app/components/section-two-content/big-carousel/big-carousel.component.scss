@@ -1,0 +1,12 @@
+.carousel-control-prev-icon {
+  background-image: url("/assets/images/big-arrow-left.svg") !important;
+  height: 5rem;
+  width: 5rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url("/assets/images/big-arrow-left.svg") !important;
+  transform: rotate(180deg);
+  height: 5rem;
+  width: 5rem;
+}

@@ -1,0 +1,27 @@
+<splide
+  [options]="{
+    type: 'loop',
+    perPage: 1.5,
+    focus: 'center',
+    pagination: false
+  }"
+>
+  <ng-container *ngFor="let item of itemList">
+    <splide-slide>
+      <div class="item">
+        <app-big-carousel-item
+          [price]="item.price"
+          [personName]="item.personName"
+          [location]="item.location"
+          [personProfileLink]="item.personProfileLink"
+          [title]="item.title"
+          [description]="item.description"
+          [imagePath]="item.imagePath"
+        ></app-big-carousel-item>
+      </div>
+    </splide-slide>
+  </ng-container>
+
+  <button class="arrow-button-left"></button>
+  <button class="arrow-button-right"></button>
+</splide>

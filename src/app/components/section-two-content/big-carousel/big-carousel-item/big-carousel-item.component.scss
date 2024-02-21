@@ -1,0 +1,81 @@
+.image {
+  display: block;
+}
+.person {
+  display: block;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.125rem;
+  .text-red {
+    color: #ff5a60;
+  }
+}
+.location {
+  display: block;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.125rem;
+  color: #3d3d3d;
+  .link-red {
+    color: #ff5a60;
+  }
+}
+
+.title {
+  display: block;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: #000000;
+}
+.description {
+  display: block;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.5rem;
+  color: #3d3d3d;
+}
+.price {
+  display: block;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  .text-green {
+    font-family: Circular Std;
+    font-size: 2.25rem;
+    color: #27ae60;
+    letter-spacing: 0.175rem;
+  }
+}
+.input-custom {
+  background: #e5e5e5;
+  border-radius: 0.625rem;
+  border-right: none;
+
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.75rem;
+  color: #3d3d3d;
+}
+.btn-custom {
+  width: 100%;
+  background: #ff5a60;
+  border-radius: 0.625rem 0.625rem 3.125rem 0.625rem;
+}
+
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #3d3d3d;
+  background-color: #e5e5e5;
+  border-left: none;
+}

@@ -1,0 +1,14 @@
+.box {
+  height: 20rem;
+  button {
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    border: none;
+    background-image: url("/assets/images/arrow-left.svg");
+    background-repeat: no-repeat;
+    &.btn-right {
+      transform: rotate(180deg);
+    }
+  }
+}

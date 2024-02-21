@@ -1,0 +1,113 @@
+<div class="container py-5">
+  <div class="faq-section py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="accordion" id="accordionExample">
+          <ng-container *ngFor="let item of faqList; let index = index">
+            <div class="accordion-item">
+              <h2 class="accordion-header" [id]="'headingOne' + index">
+                <button
+                  class="accordion-button py-6 py-lg-0"
+                  [class.collapsed]="index !== 0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  [attr.data-bs-target]="'#collapse' + index"
+                  aria-expanded="true"
+                  [attr.aria-controls]="'collapse' + index"
+                >
+                  {{ item.question }}
+                </button>
+              </h2>
+              <div
+                [id]="'collapse' + index"
+                class="accordion-collapse collapse"
+                [class.show]="index === 0"
+                [attr.aria-labelledby]="'heading' + index"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  {{ item.answer }}
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-letter-section mb-5">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-xl-10">
+        <div class="box p-4">
+          <div class="row">
+            <div class="col-12 col-lg-6 mb-3 mb-lg-3">
+              <div class="left-section">
+                <span class="title mb-2"> The Deed Wrap Newsletter </span>
+                <span class="subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                  vitae ac ac amet tellus egestas tortor. Massa ut nulla turpis
+                  semper mattis pretium sapien erat id.
+                </span>
+                <form action="">
+                  <div class="input-group mt-5 mb-3">
+                    <input
+                      type="text"
+                      class="form-control py-3 input-custom"
+                      placeholder="Email Address"
+                      aria-label="Username"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-success py-2 btn-custom">
+                    Subscribe to Newsletter
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="right-section">
+                <div class="box pb-5">
+                  <div class="container pb-5">
+                    <div class="row pb-5">
+                      <div class="col-12 mb-4">
+                        <span class="title pt-2">
+                          <img
+                            src="../../../assets/images/hello-hand.svg"
+                            alt=""
+                            style="width: 2.5rem; height: 2.5rem"
+                          />
+                          Say Hello!
+                        </span>
+                      </div>
+                      <div class="col-12 mb-4">
+                        <span class="subtitle">
+                          Reach out to us on social media or email us at
+                          <a href="">hello@deed.com</a>
+                        </span>
+                      </div>
+                      <div class="col-12 pb-4">
+                        <div class="row">
+                          <ng-container *ngFor="let link of contactLinks">
+                            <div class="col-1 me-2">
+                              <a [href]="link.address">
+                                <img
+                                  [src]="link.imagePath"
+                                  alt=""
+                                  style="height: 2rem; width: 2rem"
+                                />
+                              </a>
+                            </div>
+                          </ng-container>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

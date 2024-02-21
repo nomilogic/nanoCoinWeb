@@ -1,0 +1,120 @@
+.title {
+  display: block;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  color: #000000;
+  .text-green {
+    background-image: url("/assets/images/spark.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    padding-right: 1.5rem;
+    padding-top: 0.8rem;
+
+    color: #27ae60;
+  }
+}
+
+.subtitle {
+  display: block;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #3d3d3d;
+}
+
+.big-box {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.4);
+  border: 0.125rem solid rgba(128, 128, 128, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0.625rem 0.625rem 2.875rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  border-radius: 1.25rem;
+  .box-title {
+    display: block;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: #3d3d3d;
+  }
+  .box-value {
+    display: block;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 3rem;
+    color: #ff5a60;
+    .value-subtext {
+      font-family: Circular Std;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.125rem;
+      color: #9d999a;
+    }
+  }
+  .box-comparison {
+    display: block;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 1.125rem;
+    color: #3d3d3d;
+    .compare-title {
+      display: block;
+    }
+    .compare-content {
+      display: block;
+      .text-green {
+        color: #27ae60;
+      }
+    }
+  }
+  a.box-link {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    text-decoration-line: underline;
+    color: #3d3d3d;
+  }
+}
+
+.small-box {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.4);
+  border: 0.125rem solid rgba(128, 128, 128, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0.625rem 0.625rem 2.875rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  border-radius: 1.25rem;
+  .box-title {
+    display: block;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: #3d3d3d;
+  }
+  .box-value {
+    display: block;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 2.25rem;
+    color: #ff5a60;
+  }
+}
+
+.hand-image {
+  //  height: calc(100% + 10rem);
+  // background-image: url("/assets/images/hand.png");
+  // background-repeat: no-repeat;
+  // z-index: 100;
+}

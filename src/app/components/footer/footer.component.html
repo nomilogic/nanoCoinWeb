@@ -1,0 +1,84 @@
+<div class="last-content">
+  <div class="container py-5">
+    <div class="row mb-5">
+      <div class="col">
+        <img src="../../../assets/images/footerLogo.svg" alt="" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-2">
+            <h2 class="footer-heading">Businesses</h2>
+            <ul class="list-unstyled list-style-custom">
+              <li><a href="#" class="d-block">Buying For Your Business</a></li>
+              <li><a href="#" class="d-block">How we do it</a></li>
+              <li><a href="#" class="d-block">NFTs and Blockchain</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h2 class="footer-heading">NFTs & Crypto</h2>
+            <ul class="list-unstyled list-style-custom">
+              <li><a href="#" class="d-block">Deed is Farmer Forward</a></li>
+              <li>
+                <a href="#" class="d-block"
+                  >Practices, Persistence & Permanence</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h2 class="footer-heading">Growers</h2>
+            <ul class="list-unstyled list-style-custom">
+              <li><a href="#" class="d-block">Deed Coins</a></li>
+              <li><a href="#" class="d-block">NFT Collection</a></li>
+              <li><a href="#" class="d-block">Partnerships</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h2 class="footer-heading">Community</h2>
+            <ul class="list-unstyled list-style-custom">
+              <li><a href="#" class="d-block">Blog</a></li>
+              <li><a href="#" class="d-block">Events</a></li>
+              <li><a href="#" class="d-block">Podcasts</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h2 class="footer-heading">Resources</h2>
+            <ul class="list-unstyled list-style-custom">
+              <li><a href="#" class="d-block">Documents</a></li>
+              <li><a href="#" class="d-block">Videos</a></li>
+              <li><a href="#" class="d-block">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h2 class="footer-heading">Company</h2>
+            <ul class="list-unstyled list-style-custom">
+              <li><a href="#" class="d-block">About Us</a></li>
+              <li><a href="#" class="d-block">Deed in the News</a></li>
+              <li><a href="#" class="d-block">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <ul class="nav">
+      <ng-container *ngFor="let link of links">
+        <li class="nav-item">
+          <a class="nav-link links-custom" href="#">{{ link.text }}</a>
+        </li>
+      </ng-container>
+      <li class="ms-3 ms-lg-auto">
+        <span class="location">
+          ©{{ year }}
+          Nori, Inc. | 2208 NW Market St, #403 | Seattle, WA 98107
+        </span>
+      </li>
+    </ul>
+  </div>
+</footer>

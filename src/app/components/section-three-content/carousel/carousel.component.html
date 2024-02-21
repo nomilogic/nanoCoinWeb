@@ -1,0 +1,28 @@
+<div class="box">
+  <div class="row">
+    <div class="col-1 align-self-center">
+      <button (click)="moveLeft()" type="button"></button>
+    </div>
+    <div class="col-10">
+      <drag-scroll
+        style="width: 100%"
+        #dragAndScrollRef
+        [scrollbar-hidden]="true"
+        [snap-disabled]="true"
+      >
+        <ng-container *ngFor="let logo of logoList; let last = last">
+          <div drag-scroll-item>
+            <div [class.me-5]="!last">
+              <app-carousel-item
+                [imagePath]="logo.imagePath"
+              ></app-carousel-item>
+            </div>
+          </div>
+        </ng-container>
+      </drag-scroll>
+    </div>
+    <div class="col-1 align-self-center">
+      <button class="btn-right" (click)="moveRight()" type="button"></button>
+    </div>
+  </div>
+</div>

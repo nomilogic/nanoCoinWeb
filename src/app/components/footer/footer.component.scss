@@ -1,0 +1,43 @@
+.last-content {
+  background-color: #ff5a60;
+  border-top-left-radius: 4rem;
+  .footer-heading {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  .list-style-custom {
+    li {
+      a {
+        font-family: Circular Std;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 0.75rem;
+        color: #ffffff;
+        text-decoration: none;
+        margin-bottom: 0.375rem;
+      }
+    }
+  }
+}
+
+.footer {
+  background: #ffffff;
+  .links-custom {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 0.875rem;
+    color: #000000;
+  }
+  .location {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 0.875rem;
+    color: #000000;
+  }
+}

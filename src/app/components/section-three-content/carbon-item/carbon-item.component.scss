@@ -1,0 +1,30 @@
+.item {
+  .box {
+    background: rgba(131, 131, 131, 0.16);
+    border: 0.125rem solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    backdrop-filter: blur(3.125rem);
+    border-radius: 1.25rem;
+    .title {
+      font-family: Circular Std;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 1.125rem;
+      color: #000000;
+    }
+    .subtitle {
+      font-family: Circular Std;
+      font-style: normal;
+      font-weight: 450;
+      font-size: 0.875rem;
+      color: #3d3d3d;
+      line-height: 0.125rem;
+    }
+  }
+  .btn-custom {
+    margin-top: 1rem;
+    width: 100%;
+    background: #ff5a60;
+    border-radius: 0.5rem 0.5rem 3rem 0.5rem;
+  }
+}
